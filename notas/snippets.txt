@@ -1,0 +1,12 @@
+//Login
+logo:
+this->logo->Image = Image::FromFile(L"./img/logo.png");
+
+panel_main:
+this->panel_main->BackgroundImage = Image::FromFile(L"./img/fondo.jpg");
+
+//button_menu:
+this->button_menu->Image = Image::FromFile(L"./img/casa.png");
+
+//img_user
+this->img_user->Image = Image::FromFile(L"./img/usuario.png");
