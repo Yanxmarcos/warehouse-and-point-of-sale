@@ -1,18 +1,12 @@
-# La Bodega de Don Wlan
+# Sistema de gestión de tienda y punto de venta
 
-<p align="center">
-  <img src="img/logo.png" alt="Logo La Bodega de Don Wlan" width="280">
-</p>
-
-**Sistema de gestión de bodega y punto de venta (POS)** desarrollado en **C++/CLI con Windows Forms** para Windows.
-
-Proyecto académico del curso *Organización de Archivos* — Universidad Nacional de Trujillo (UNT), Ciclo IV, 2022.
+**Sistema de gestión de tienda y punto de venta (POS)** desarrollado en **C++/CLI con Windows Forms** para Windows.
 
 ---
 
 ## Descripción
 
-Aplicación de escritorio para administrar una bodega (abarrotes): control de empleados, inventario de productos, registro de ventas y reportes, todo almacenado en **archivos binarios de registros de longitud fija** (lectura/escritura directa con `fread` / `fwrite`), que es justamente el tema central del curso.
+Aplicación de escritorio para administrar una bodega (abarrotes): control de empleados, inventario de productos, registro de ventas y reportes, todo almacenado en **archivos binarios de registros de longitud fija** (lectura/escritura directa con `fread` / `fwrite`).
 
 ## Módulos
 
@@ -32,28 +26,6 @@ Aplicación de escritorio para administrar una bodega (abarrotes): control de em
 - **.NET Framework 4.7.2**
 - **Visual Studio 2022** (Platform Toolset `v143`, x64)
 - Archivos binarios como base de datos (`fread`/`fwrite`)
-
-## Estructura del proyecto
-
-```
-trabajo/
-├── trabajo.sln              # Solución de Visual Studio
-├── Form1.h                  # Toda la interfaz y la lógica de la aplicación (~3.800 líneas)
-├── Form1.cpp                # Punto de entrada del formulario
-├── CppCLR_WinFormsProject.cpp
-├── AssemblyInfo.cpp         # Información del ensamblado
-├── pch.h / pch.cpp          # Precompiled headers
-├── app.rc / app.ico         # Recurso e ícono de la aplicación
-├── img/                     # Imágenes de la interfaz (logo, fondo, íconos)
-├── notas/                   # Notas y snippets de referencia
-└── registros/               # Archivos binarios de datos + utilidades
-    ├── Empleados.txt        # Registros binarios de empleados
-    ├── Inventario.txt       # Registros binarios de productos
-    ├── Ventas.txt           # Registros binarios de ventas
-    ├── crearArchivos.cpp    # Genera datos de ejemplo de empleados
-    ├── crearInventario.cpp  # Genera datos de ejemplo de inventario
-    └── crearVentas.cpp      # Genera datos de ejemplo de ventas
-```
 
 ## Requisitos
 
